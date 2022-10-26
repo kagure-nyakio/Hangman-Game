@@ -1,0 +1,6 @@
+<div>
+	 <p> <span class="text-bold">Turns left:</span> 	<%= @tally.turns_left %> </p>
+	 <p> <span class="text-bold">Letters used: </span> 	<%= @tally.used |> Enum.join(",")%> </p>
+	 <p> <span class="text-bold">Words so far:</span> 	<%= @tally.letters |> Enum.join(" ")%> </p>
+
+</div>

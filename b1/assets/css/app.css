@@ -1,0 +1,45 @@
+/* This file is for your main application CSS */
+@import "./phoenix.css";
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+body {
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+
+.text-bold {
+	font-weight: bold;
+	color: blue;
+}
+
+form {
+	display: flex;
+	margin-top: 1em;
+}
+
+form input {
+	width: 30%;
+	margin-right: 1em;
+}
+
+.won,
+.lost {
+	animation: blink 1.5s linear infinite;
+}
+
+.won {
+	color: #43c6ac;
+}
+
+.lost, .already-used, .bad-guess {
+	color: red;
+}
+
+.good-guess { color: cyan }
+.initiliazing { color: #000c40 }
+
+@keyframes blink {
+	0% { opacity: 0; }
+	50% { opacity: 0.7; }
+	100% { opacity: 0; }
+}
