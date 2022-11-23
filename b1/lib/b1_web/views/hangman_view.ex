@@ -25,7 +25,7 @@ defmodule B1Web.HangmanView do
       # to return both of this(input and submit -> wrap in a list
       [
       text_input(f, :guess),
-        submit("Make next guess") 
+      submit("Make next guess") 
       ]
 		 end) 
   end
